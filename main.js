@@ -13,11 +13,16 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
+// tslint:disable-next-line: typedef
 var message = "Hello World";
 console.log(message);
+// tslint:disable-next-line: typedef
 var x = 10;
+// tslint:disable-next-line: typedef
 var y = 20;
+// tslint:disable-next-line: typedef
 var sum; // "let" can be reassigned and modified, but can't declare same variable more than once
+// tslint:disable-next-line: typedef
 var title = "Codevolution"; // "const" cannot be reassigned or modified, and can't declare the same variable more than once
 var isBeginner = true; // let <variable>: <type> = <value>
 var total = 0;
@@ -58,9 +63,11 @@ myVariable2.toUpperCase(); // type assertion; similar to type casting in other l
 if (hasName(myVariable2)) {
     console.log(myVariable2.name);
 }
+// tslint:disable-next-line: typedef
 var a; // since a is not initialized, anything can be assigned to it
 a = 10;
 a = true;
+// tslint:disable-next-line: typedef
 var b = 20; // typescript infers "b" is a number; cannot assign a string to it
 var multiType; // can declare a type union with |
 multiType = 20;

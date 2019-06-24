@@ -1,11 +1,16 @@
-export { }
+export { };
+// tslint:disable-next-line: typedef
 let message = "Hello World";
 console.log(message);
 
+// tslint:disable-next-line: typedef
 let x = 10;
+// tslint:disable-next-line: typedef
 let y = 20;
 
+// tslint:disable-next-line: typedef
 let sum; // "let" can be reassigned and modified, but can't declare same variable more than once
+// tslint:disable-next-line: typedef
 const title = "Codevolution"; // "const" cannot be reassigned or modified, and can't declare the same variable more than once
 
 let isBeginner: boolean = true; // let <variable>: <type> = <value>
@@ -53,10 +58,12 @@ if (hasName(myVariable2)) {
     console.log(myVariable2.name);
 }
 
+// tslint:disable-next-line: typedef
 let a; // since a is not initialized, anything can be assigned to it
 a = 10;
 a = true;
 
+// tslint:disable-next-line: typedef
 let b = 20; // typescript infers "b" is a number; cannot assign a string to it
 
 let multiType: number | boolean; // can declare a type union with |
@@ -90,7 +97,7 @@ function fullName(person: IPerson): void {
 let p: IPerson = {
     firstName: "Bruce",
     lastName: "Wayne"
-}
+};
 
 fullName(p);
 
