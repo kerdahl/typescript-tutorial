@@ -52,3 +52,18 @@ var b = 20; // typescript infers "b" is a number; cannot assign a string to it
 var multiType; // can declare a type union with |
 multiType = 20;
 multiType = true;
+// function declaration; function <function name>(<input>: <input type>, ...): <output type> { }
+function add(num1, num2) {
+    if (num2) {
+        return num1 + num2;
+    }
+    else {
+        return num1;
+    }
+}
+add(5, 10);
+add(5);
+function addDefault(num1, num2) {
+    if (num2 === void 0) { num2 = 10; }
+    return num1 + num2;
+}

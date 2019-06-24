@@ -63,3 +63,17 @@ let multiType: number | boolean; // can declare a type union with |
 multiType = 20;
 multiType = true;
 
+// function declaration; function <function name>(<input>: <input type>, ...): <output type> { }
+function add(num1: number, num2?: number): number { // ? on num2 makes it optional
+    if (num2) {
+        return num1 + num2;
+    } else {
+        return num1;
+    }
+}
+add(5, 10);
+add(5);
+
+function addDefault(num1: number, num2: number = 10): number { // assignment after type gives default value
+    return num1 + num2;
+}
