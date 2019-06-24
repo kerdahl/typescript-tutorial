@@ -1,0 +1,21 @@
+{
+  "name": "typescript-tutorial",
+  "version": "1.0.0",
+  "description": "Playing around with TypeScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-kyle:kerdahl/typescript-tutorial.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Kyle Erdahl",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.0.0"
+  }
+}
