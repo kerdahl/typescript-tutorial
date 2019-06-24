@@ -93,3 +93,44 @@ let p: IPerson = {
 }
 
 fullName(p);
+
+// public: free accessability
+// private: only accessible in class
+// protected: only accessible in class and inheriting classes
+class Employee {
+    protected employeeName: string;
+
+    constructor(name: string) {
+        this.employeeName = name;
+    }
+
+    greet(): void {
+        console.log(`Hello, ${this.employeeName}`);
+    }
+}
+
+let emp1: Employee = new Employee("Kyle");
+emp1.greet();
+
+class Manager extends Employee {
+    mID: number = 1;
+
+    constructor(managerName: string, id?: number) {
+        super(managerName);
+        if (id) { this.mID = id; }
+    }
+
+    delegateWork(): void {
+        console.log(`${this.employeeName} delegating tasks...`);
+    }
+}
+
+let m1: Manager = new Manager("Bruce", 3);
+m1.delegateWork();
+m1.greet();
+console.log(m1.mID);
+
+let m2: Manager = new Manager("Clark");
+m2.greet();
+m2.delegateWork();
+console.log(m2.mID);
