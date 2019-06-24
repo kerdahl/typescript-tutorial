@@ -77,3 +77,19 @@ add(5);
 function addDefault(num1: number, num2: number = 10): number { // assignment after type gives default value
     return num1 + num2;
 }
+
+interface IPerson { // variables can be defaulted and optional
+    firstName: string;
+    lastName: string;
+}
+
+function fullName(person: IPerson): void {
+    console.log(`${person.firstName} ${person.lastName}`);
+}
+
+let p: IPerson = {
+    firstName: "Bruce",
+    lastName: "Wayne"
+}
+
+fullName(p);

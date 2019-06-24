@@ -67,3 +67,11 @@ function addDefault(num1, num2) {
     if (num2 === void 0) { num2 = 10; }
     return num1 + num2;
 }
+function fullName(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+var p = {
+    firstName: "Bruce",
+    lastName: "Wayne"
+};
+fullName(p);
