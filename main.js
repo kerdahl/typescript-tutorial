@@ -45,3 +45,10 @@ myVariable2.toUpperCase(); // type assertion; similar to type casting in other l
 if (hasName(myVariable2)) {
     console.log(myVariable2.name);
 }
+var a; // since a is not initialized, anything can be assigned to it
+a = 10;
+a = true;
+var b = 20; // typescript infers "b" is a number; cannot assign a string to it
+var multiType; // can declare a type union with |
+multiType = 20;
+multiType = true;

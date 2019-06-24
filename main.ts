@@ -52,3 +52,14 @@ let myVariable2: unknown = "test";
 if (hasName(myVariable2)) {
     console.log(myVariable2.name);
 }
+
+let a; // since a is not initialized, anything can be assigned to it
+a = 10;
+a = true;
+
+let b = 20; // typescript infers "b" is a number; cannot assign a string to it
+
+let multiType: number | boolean; // can declare a type union with |
+multiType = 20;
+multiType = true;
+
