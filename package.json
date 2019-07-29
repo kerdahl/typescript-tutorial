@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com-kyle:kerdahl/typescript-tutorial.git"
+    "url": "https://github.com/kerdahl/typescript-tutorial.git"
   },
   "keywords": [
     "typescript"
@@ -16,6 +16,7 @@
   "author": "Kyle Erdahl",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^6.0.0"
+    "eslint": "^6.0.0",
+    "lodash": ">=4.17.13"
   }
 }
