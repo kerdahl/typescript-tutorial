@@ -16,7 +16,7 @@
   "author": "Kyle Erdahl",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.3.1",
+    "eslint": "^7.13.0",
     "lodash": ">=4.17.13"
   }
 }
